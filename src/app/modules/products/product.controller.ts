@@ -11,7 +11,9 @@ const createProducts = async (req: Request, res: Response) => {
       status: true,
       data: result,
     });
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 //get AllProducts from DB and response to the user
